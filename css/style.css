@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  transform: translate(0%, 9rem) scale(3);
+}
+.logo svg {
+  width: 100%;
+}
+.logo svg path {
+  fill: #15F5BA;
+}
+
+.hero-section {
+  background-color: #a7035a;
+}
+.hero-section .description {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transform: translateY(35svh);
+}
+.hero-section .hero-image .clip {
+  height: 100vh;
+  --clip:"100%";
+  -webkit-clip-path: circle(var(--clip) at 50% 50%);
+          clip-path: circle(var(--clip) at 50% 50%);
+  position: relative;
+}
+.hero-section .hero-image .clip img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hero-section .hero-bottom {
+  height: 100svh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-section .hero-bottom .description {
+  max-width: 600px;
+}
+.hero-section .hero-bottom .main-title .left {
+  opacity: 0;
+  transform: translate(-40%, -30%);
+}
+.hero-section .hero-bottom .main-title .right {
+  opacity: 0;
+  transform: translate(40%, 50%);
+}/*# sourceMappingURL=style.css.map */
