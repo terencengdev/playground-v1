@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  world.gravity.y = 0;
+
   const WIDTH = render.options.width;
   const HEIGHT = render.options.height;
 
@@ -43,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // add bodies
-  var stack = Composites.stack(100, 100, 10, 10, 10, 0, function (x, y) {
-    return Bodies.circle(x, y, 100);
+  var stack = Composites.stack(20, 20, 10, 10, 10, 0, function (x, y) {
+    return Bodies.circle(x, y, Math.floor(Math.random() * 99) + 70);
   });
 
   // create two boxes and a ground
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mouseConstraint = MouseConstraint.create(engine, {
       mouse: mouse,
       constraint: {
-        stiffness: 0.2,
+        stiffness: 0.5,
         render: {
           visible: false,
         },
