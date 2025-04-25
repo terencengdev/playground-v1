@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  line-height: 1.5em;
 }
 
 .main {
@@ -9,14 +10,26 @@ body {
 }
 
 .logo {
-  width: 100px;
-  transform: translate(0%, 9rem) scale(3);
+  transform: translate(0%, 5rem);
 }
 .logo svg {
   width: 100%;
 }
 .logo svg path {
   fill: #15F5BA;
+}
+
+#main_heading {
+  height: 140px;
+  position: relative;
+  color: #15F5BA;
+  font-size: 120px;
+  line-height: 1.2;
+  font-kerning: none;
+  font-weight: 700;
+}
+#main_heading .line {
+  overflow: hidden;
 }
 
 .hero-section {
@@ -53,6 +66,7 @@ body {
 }
 .hero-section .hero-bottom .description {
   max-width: 600px;
+  opacity: 0;
 }
 .hero-section .hero-bottom .main-title .left {
   opacity: 0;
@@ -61,4 +75,8 @@ body {
 .hero-section .hero-bottom .main-title .right {
   opacity: 0;
   transform: translate(40%, 50%);
+}
+
+.video-section {
+  background-color: #3b0340;
 }/*# sourceMappingURL=style.css.map */
