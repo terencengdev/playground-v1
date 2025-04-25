@@ -3,20 +3,36 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    line-height: 1.5em;
 }
 .main {
     width: 100%;
 }
 .logo {
-   width: 100px;
-   transform: translate(0%,9rem) scale(3);
+   transform: translate(0%,5rem);
+
+
    svg{
     width:100%;
     path{
         fill:#15F5BA;
     }
    }
+
 }
+#main_heading {
+    height:140px;
+    position: relative;
+    color:#15F5BA;
+    font-size: 120px;
+    line-height: 1.2;
+    font-kerning: none;
+    font-weight: 700;
+    .line {
+        overflow: hidden;
+    }
+}
+
 .hero-section {
     background-color: #a7035a;
     .description {
@@ -50,6 +66,7 @@ body {
         bottom:0;
         .description {
             max-width: 600px;
+            opacity: 0;
         }
         .main-title {
             .left {
@@ -62,5 +79,8 @@ body {
             }
         }
     }
+}
+.video-section {
+    background-color: #3b0340;
 }
 
